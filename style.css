@@ -1,0 +1,397 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.wrapper{
+    overflow-x:hidden; 
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap'); 
+
+nav{
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    padding: 0px 100px;
+    
+    /* position: fixed; */
+    background-image: linear-gradient(#033747,#012733);
+    /* background-color: red; */
+   
+}
+nav .logo{
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+}
+
+nav ul{
+    float: right;
+}
+nav li {
+    display: inline-block;
+    list-style: none;
+}
+nav a li{
+    font-size: 22px;
+    padding: 0px 30px;
+    color: white;
+    text-decoration: none;
+}
+
+nav a li:hover{
+    /* color: orange; */
+    transition: all 0.4s ease 0s;
+    background-color: orange;
+    transform: translateY(-10px);
+    
+    
+}
+
+.maindiv{
+    width: 70%;
+    height: 500px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    background-image: url(1.jpg);
+    background-size: 100% 100%;
+    box-shadow: 1px 2px 10px 6px white;
+    animation: slider 18s infinite linear;
+}
+
+@keyframes slider{
+    0%{background-image: url(1.jpg);}
+    25%{background-image: url(33.jpg);}
+    50%{background-image: url(44.jpeg);}
+    75%{background-image: url(55.png);}
+}
+
+/* @keyframes colorslider{
+    from{background-color: red;}
+    to{ background-color: green;}
+} */
+
+.fee{
+    width: 100%;
+    height: 500px;
+    background-color: #ffd700;
+    margin: auto;
+    position: relative;
+
+    
+    
+}
+.schoolname{
+    padding: 30px;
+    width: 20%;
+    height: 100px;
+    /* border: 2px  solid black; */
+    position: absolute;
+    top: 25px;
+    left: 250px;
+    font-size: 20px;
+
+}
+
+.aboutfee{
+    width: 40%;
+    height: 100px;
+    /* display: block; */
+    padding: 30px;
+    /* border: 2px  solid black; */
+    position: absolute;
+    top: 25px;
+    left: 700px;
+    font-size: 18px;
+    
+   
+  
+    
+}
+
+
+
+
+button{
+    width: 19%;
+    height: 60px;
+    border-radius: 12px ;
+    border: 0px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* margin-top: 30px;
+    margin-left: 70px; */
+    text-align: center;
+    margin: 30px;
+
+
+
+}
+button a{
+    text-decoration: none;
+}
+button:hover{
+    background-color:greenyellow;
+    transform: translateY(-4px);
+   
+    
+    
+}
+
+.feebutton{
+    /* border: 2px solid black; */
+    width: 65%;
+    height: 220px;
+    position: absolute;
+    top: 250px;
+    left: 300px;
+    
+}
+
+.downbutton{
+    position: relative;
+    top: 6px;
+    left: 300px;
+    
+    
+}
+.topbutton{
+    position: relative;
+    top: 4px;
+    left: 200px;
+    
+    
+
+}
+
+.evolving{
+    height: 500px;
+    display: flex;
+    /* border: 2px solid gray; */
+    justify-content: center;
+    align-items: center;
+    
+
+ 
+
+}
+
+.imagelogo{
+    /* background-color: red; */
+    width: 50%;
+    height: 500px;
+    /* border: 2px solid gray; */
+    text-align: center;
+   
+}
+  
+
+.paragraph{
+    /* background-color: red; */
+    width: 50%;
+    height: 500px;
+    /* border: 2px solid gray; */
+    text-align: center;
+   
+  
+}
+.paragraph p{
+    font-size: 20px;
+}
+
+.initiatives{
+    position: relative;
+    /* border: 2px solid black; */
+    margin-left: 10px;
+    height: 750px;
+    width: 99%;
+    text-align: center;
+}
+.card1{
+    position: absolute;
+    top: 100px;
+    left: 180px;
+    
+
+}
+.card2{
+    position: absolute;
+    top: 100px;
+    left: 700px;
+}
+.card3{
+    position: absolute;
+    top: 100px;
+    left: 1180px;
+
+}
+
+.infrastructure{
+    margin: 50px;
+    text-align: center;
+    margin-bottom: 130px;
+}
+
+.infrastructure h1{
+    font-size: 50px;
+   
+}
+
+
+/* footer ka csss hai bhai log */
+
+
+footer{
+    position: relative;
+    width: 100%;
+    background: #3586ff;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+footer .social_icon , footer .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+    flex-wrap: wrap;
+
+}
+
+footer .social_icon li,footer .menu li{
+    list-style: none;
+}
+footer .social_icon li a{
+    font-size: 2em;
+    color: #fff;
+    margin: 0px 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+footer .social_icon li a:hover{
+    transform: translateY(-10px);
+
+}
+
+footer .menu li a {
+    font-size: 1.2em;
+    color: #fff;
+    margin: 0px 10px;
+    display: inline-block;
+    text-decoration: none;
+    opacity: 0.75;
+
+
+}
+
+footer .menu li a:hover{
+    opacity: 1;
+}
+
+footer p{
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+footer .wave{
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background:  url(wave.png);
+    background-size: 1000px 100px;
+}
+
+footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWave 4s linear infinite;
+}
+
+footer .wave #wave2{
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animateWave_02 4s linear infinite;
+
+}
+
+footer .wave #wave3{
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWave_03 3s linear infinite;
+}
+
+footer .wave #wave4{
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animateWave_04 3s linear infinite;
+}
+
+@keyframes animateWave{
+    0%{
+        background-position-x: 1000px;
+    }
+    100%{
+        background-position-x: 0px;
+        
+    }
+
+}
+
+@keyframes animateWave_02{
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: 1000px;
+        
+    }
+
+}
+
+@keyframes animateWave_03{
+    0%{
+        background-position-x: 0px;
+    }
+    100%{
+        background-position-x: 1000px;
+        
+    }
+
+}
+
+@keyframes animateWave_04{
+    0%{
+        background-position-x: 1000px;
+    }
+    100%{
+        background-position-x: 0px;
+        
+    }
+
+}
+
